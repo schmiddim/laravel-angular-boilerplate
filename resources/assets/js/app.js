@@ -1,22 +1,31 @@
+// public/scripts/app.js
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+(function() {
 
-require('./bootstrap');
+    'use strict';
 
-window.Vue = require('vue');
+    angular
+        .module('authApp', ['ui.router', 'satellizer'])
+        .config(function($stateProvider, $urlRouterProvider, $authProvider) {
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+            // Satellizer configuration that specifies which API
+            // route the JWT should be retrieved from
+            $authProvider.loginUrl = '/api/authenticate';
 
-Vue.component('example', require('./components/Example.vue'));
+            // Redirect to the auth state if any other states
+            // are requested other than users
+            $urlRouterProvider.otherwise('/auth');
 
-const app = new Vue({
-    el: '#app'
-});
+            $stateProvider
+                .state('auth', {
+                    url: '/auth',
+                    templateUrl: '../views/authView.html',
+                    controller: 'AuthController as auth'
+                })
+                .state('users', {
+                    url: '/users',
+                    templateUrl: '../views/userView.html',
+                    controller: 'UserController as user'
+                });
+        });
+})();
