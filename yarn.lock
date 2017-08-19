@@ -89,6 +89,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-toastr@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/angular-toastr/-/angular-toastr-2.1.1.tgz#9f8350ca482145a44d011a755b8fb3623d60544c"
+
 angular-ui-router@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.3.tgz#bf2494caae95c37cf01af3761d89747cfed2db45"
@@ -5576,6 +5580,10 @@ to-arraybuffer@^1.0.0:
 to-fast-properties@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-1.0.3.tgz#b83571fa4d8c25b82e231b06e3a3055de4ca1a47"
+
+toastr@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/toastr/-/toastr-2.1.2.tgz#fd69066ae7578a5b3357725fc9c7c335e9b681df"
 
 tough-cookie@~2.3.0:
   version "2.3.2"

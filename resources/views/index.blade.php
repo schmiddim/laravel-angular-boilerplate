@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Angular-Laravel Authentication</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
 </head>
 <body ng-app="authApp">
 
@@ -19,9 +20,12 @@
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="node_modules/satellizer/dist/satellizer.js"></script>
+<script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
 
 <!-- Application Scripts -->
 <script src="js/app.js"></script>
 <script src="js/authController.js"></script>
 <script src="js/userController.js"></script>
+<script src="js/signupController.js"></script>
+<script src="js/homeController.js"></script>
 </html>
