@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <title>Angular-Laravel Authentication</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-app="authApp">
 
