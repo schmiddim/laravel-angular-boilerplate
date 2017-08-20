@@ -12,3 +12,6 @@ yarn-error.log
 .env
 
 .idea
+
+public/views
+public/js

@@ -1,5 +1,3 @@
-// public/scripts/userController.js
-
 (function () {
 
     'use strict';

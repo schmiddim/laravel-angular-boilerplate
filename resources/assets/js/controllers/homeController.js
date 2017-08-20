@@ -1,14 +1,12 @@
-// public/scripts/authController.js
-//@todo move this into shitty resources/assets
 (function() {
 
     'use strict';
 
     angular
         .module('authApp')
-        .controller('AuthController', AuthController);
+        .controller('HomeController', HomeController);
 
-    function AuthController($auth, $state) {
+    function HomeController($auth, $state) {
 
         var vm = this;
 
